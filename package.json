@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/mercurius-hackathon/mercurius-nodejs#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "moment": "^2.22.1",
     "web3": "^0.14.0"
