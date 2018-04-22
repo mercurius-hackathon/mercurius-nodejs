@@ -1,6 +1,6 @@
 module.exports = {
   httpProvider: function () {
-    return 'http://192.168.74.157:9545';
+    return 'http://10.217.2.141:9545';
   },
   contractAddress: function () {
     return '0xf12b5dd4ead5f743c6baa640b0216200e89b60da';
@@ -132,6 +132,41 @@ module.exports = {
         "type": "function"
       },
       {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "_strateId",
+            "type": "uint256"
+          },
+          {
+            "name": "_backTestResult",
+            "type": "string"
+          }
+        ],
+        "name": "testFunction",
+        "outputs": [
+          {
+            "name": "result",
+            "type": "uint256"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "dna",
+            "type": "uint256"
+          },
+          {
+            "name": "backTestResult",
+            "type": "string"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
         "constant": true,
         "inputs": [
           {
@@ -180,45 +215,6 @@ module.exports = {
         ],
         "payable": false,
         "stateMutability": "view",
-        "type": "function"
-      },
-      {
-        "constant": false,
-        "inputs": [
-          {
-            "name": "_owner",
-            "type": "address"
-          },
-          {
-            "name": "_strateId",
-            "type": "uint256"
-          },
-          {
-            "name": "_backTestResult",
-            "type": "string"
-          }
-        ],
-        "name": "setBackTestResult",
-        "outputs": [
-          {
-            "name": "result",
-            "type": "uint256"
-          },
-          {
-            "name": "name",
-            "type": "string"
-          },
-          {
-            "name": "dna",
-            "type": "uint256"
-          },
-          {
-            "name": "backTestResult",
-            "type": "string"
-          }
-        ],
-        "payable": false,
-        "stateMutability": "nonpayable",
         "type": "function"
       },
       {
